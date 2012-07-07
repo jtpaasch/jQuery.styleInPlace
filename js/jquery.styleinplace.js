@@ -838,8 +838,8 @@
 
 			// Close the lightbox if the user clicks on the following.
 			var close_if_clicked =	'.style-in-place-lightbox-top-row, ' + 
-									'.style-in-place-lightbox-middle-row, ' + 
-									'.style-in-place-lightbox-editor-pane-bottom-row'; 
+				'.style-in-place-lightbox-middle-row, ' + 
+				'.style-in-place-lightbox-editor-pane-bottom-row'; 
 			lightbox.find(close_if_clicked).on('click', function() {
 				close_lightbox();
 			});
