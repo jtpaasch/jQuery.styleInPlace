@@ -845,20 +845,15 @@
 			// Close the lightbox if the user clicks on the following.
 			var close_if_clicked =	'.style-in-place-lightbox-top-row, ' + 
 				'.style-in-place-lightbox-middle-row, ' + 
-				'.style-in-place-lightbox-editor-pane-bottom-row'; 
+				'.style-in-place-lightbox-editor-pane-bottom-row, ' + 
+				'.style-in-place-lightbox-editor-pane-done-button'; 
 			lightbox.find(close_if_clicked).on('click', function() {
-				close_lightbox();
-			});
-			
-			// Close the lightbox if user clicks on the 'Done' button,
-			// and pass the changes to the 'save' callback (if one is defined).
-			lightbox.find('.style-in-place-lightbox-editor-pane-done-button').on('click', function() {
 				close_lightbox();
 				if (defaults.save !== undefined) {
 					defaults.save(changes);
 				}
 			});
-
+			
 			// Setup current property values.
 			setup_current_property_values();
 
