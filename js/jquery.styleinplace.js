@@ -540,9 +540,8 @@
 		/**
 		 * This sets the CSS properties in the lightbox's editor pane to their 
 		 * current values. 
-		 * @param  {Element} item The element in the editor pane to update. 
 		 */
-		var setup_current_property_values = function(item) {
+		var setup_current_property_values = function() {
 			$('#style-in-place-editor-pane-font-family').html(self.css('font-family'));
 			$('#style-in-place-editor-pane-font-size').html(self.css('font-size'));
 			$('#style-in-place-editor-pane-line-height').html(self.css('line-height'));
@@ -855,7 +854,7 @@
 			});
 
 			// Setup current property values.
-			setup_current_property_values(self);
+			setup_current_property_values();
 
 			// Setup the property editors.
 			setup_property_editors();
