@@ -104,5 +104,3 @@ Caveats
 This plugin is a proof-of-concept, which is to say that there may very well be bugs. I have tried to find all the bugs I can, but I have not been systematic about my testing, so I could have overlooked any number of bugs. I plan to do more systematic testing for the plugin at some point in the near future, but I have not done so at present. 
 
 I should also note that this plugin only allows you to edit an incomplete list of CSS properties. These are the properties that I find to be most frequently useful, but that is not to say that there are other CSS properties that others might need to edit on a regular basis. I plan to add more properties to this plugin as needed. 
-
-But then again, the whole point here is that I can add and test further features as my employr needs! 
