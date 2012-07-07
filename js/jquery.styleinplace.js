@@ -228,7 +228,13 @@
 		 * This sets the color for the editor pane in the lightbox.
 		 * @type {String}
 		 */
-		var editor_pane_color = '#cdcdcd';
+		var editor_pane_color = 'white';
+
+		/**
+		 * This sets the background opacity for the lightbox.
+		 * @type {String}
+		 */
+		var lightbox_bg_opacity = '0.8';
 
 		/**
 		 * A dictionary of CSS changes.
@@ -262,7 +268,7 @@
 			});
 			$('.style-in-place-lightbox-top-row').css({
 				'background': 'black',
-				'opacity': '0.7',
+				'opacity': lightbox_bg_opacity,
 				'width': '100%'
 			});
 			$('.style-in-place-lightbox-middle-row').css({
@@ -270,7 +276,7 @@
 			});
 			$('.style-in-place-lightbox-middle-row-left-column').css({
 				'background': 'black',
-				'opacity': '0.7',
+				'opacity': lightbox_bg_opacity,
 				'position': 'relative',
 				'display': 'inline-block',
 				'height': '100%',
@@ -284,7 +290,7 @@
 			});
 			$('.style-in-place-lightbox-middle-row-right-column').css({
 				'background': 'black',
-				'opacity': '0.7',
+				'opacity': lightbox_bg_opacity,
 				'position': 'relative',
 				'display': 'inline-block',
 				'height': '100%',
@@ -292,7 +298,7 @@
 			});
 			$('.style-in-place-lightbox-bottom-row').css({
 				'background': 'black',
-				'opacity': '0.7',
+				'opacity': lightbox_bg_opacity,
 				'height': '100%'
 			});
 			$('.style-in-place-lightbox-editor-pane').css({
