@@ -33,9 +33,11 @@
 
         <p>Testing.</p>
 
-        <p>Click anywhere on this sentence to change its appearance.</p>
+        <span class="styleable">
+          Click anywhere on this sentence to change its appearance.
+        </span>
 
-        
+
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/jpaasch">jpaasch</a></p>
@@ -49,6 +51,18 @@
 
     <!-- Make sure the styleInPlace plugin is included too. -->
     <script src="javascripts/jquery.styleinplace.min.js"></script>
+
+    <script>
+
+      $(document).ready(function() {
+
+        $('.styleable').on('click', function() {
+          $(this).styleInPlace();
+        });
+
+      });
+
+    </script>
 
   </body>
 </html>
