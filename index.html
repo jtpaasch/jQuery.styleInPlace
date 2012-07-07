@@ -29,14 +29,21 @@
       </header>
       <section>
         
-        <p>Hello World.</p>
+        <p>This plugin lets you style elements in place, in the browser. For instance, click on the following sentence to see it in action.</p>
 
-        <p>Testing.</p>
+        <p style="margin: 20px;">
+          <span class="styleable" style="font-family: Georgia, serif; font-size: 23px; color: green;">
+            Click anywhere on this sentence to change its appearance.
+          </span>
+        </p>
 
-        <span class="styleable">
-          Click anywhere on this sentence to change its appearance.
-        </span>
+        <p>The plugin also keeps a record of all styling changes you make, which you can send to a callback (in case you want to use ajax or whatever to add those changes to CSS files).</p>
 
+        <p style="padding: 20px;">
+          <span class="styleable-alert" style="font-family: Georgia, serif; font-size: 23px; color: green;">
+            Modify the appearance of this sentence, and be notified of the changes in an alert.
+          </span>
+        </p>         
 
       </section>
       <footer>
@@ -54,10 +61,31 @@
 
     <script>
 
+      function when_done(changes) {
+        var property, list = '';
+        for (property in changes) {
+          if (changes.hasOwnProperty(property)) {
+            list += property + ': ' + changes[property] + "\n";
+          }
+        }
+        if (list == '') {
+          list = 'You didn\'t make any changes.';
+        } else {
+          list = 'Changes you made (in order):' + "\n\n" + list;
+        }
+        window.alert(list);
+      }
+
       $(document).ready(function() {
 
         $('.styleable').on('click', function() {
           $(this).styleInPlace();
+        });
+
+        $('.styleable-alert').on('click', function() {
+          $(this).styleInPlace({
+            save: when_done
+          });
         });
 
       });
