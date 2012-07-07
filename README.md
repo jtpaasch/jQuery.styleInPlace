@@ -25,6 +25,8 @@ Of course, that is not practical, because we usually want to initiate the editin
 
 ```javascript
 
+<script>
+
 	// When an H1 element is clicked, do the following:
 	$('h1').on('click', function() {
 
@@ -32,6 +34,8 @@ Of course, that is not practical, because we usually want to initiate the editin
 		$(this).styleInPlace();
 
 	});
+
+</script>
 ```
 
 Or, even better, we could do this when the document is ready: 
