@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<meta charset="utf-8">
+		<title>Style in Place | Test</title>
+
+		<!-- Add an external stylesheet if you like. -->
+		<link rel="stylesheet" type="text/css" href="css/all.css">
+
+		<!-- Make sure a recent version of jQuery is included. -->
+		<script src="http://code.jquery.com/jquery-latest.pack.js"></script>
+
+		<!-- Make sure the styleInPlace plugin is included too. -->
+		<script src="js/jquery.styleinplace.js"></script>
+
+	</head>
+
+	<body>
+
+		<h1>Test</h1>
+		
+		<!-- A random element, with a CSS class of "styleable". -->
+		<div class="styleable">
+			Click anywhere on this sentence to edit its appearance.
+		</div>
+
+		<script>
+
+			// When the document is ready:
+			$(document).ready(function() {
+				
+				// Select items that have a class of "styleable",
+				// and when they are clicked, do the following: 
+				$('.styleable').on('click', function(event) {
+					
+					// Style the element in place.
+					$(this).styleInPlace();
+
+				});
+
+			});
+
+		</script>
+	</body>
+</html>
