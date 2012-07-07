@@ -20,3 +20,35 @@ To use the plugin for all H1 elements, simply do this with javascript:
 
 ```
 
+Of course, that is not practical, because we usually want to initiate the editing when the user clicks on the element. Hence, we could nest the above statement inside a jQuery on('click'): 
+
+```javascript
+
+	// When an H1 element is clicked, do the following:
+	$('h1').on('click', function() {
+
+		// Style this element in-place:
+		$(this).styleInPlace();
+
+	});
+
+```
+
+Or, even better, we could do this when the document is ready: 
+
+```javascript
+	
+	// When the document is ready, do the following: 
+	$(document).ready(function() {
+
+		// When an H1 element is clicked, do the following:
+		$('h1').on('click', function() {
+
+			// Style this element in-place:
+			$(this).styleInPlace();
+
+		});
+
+	});
+
+```
