@@ -373,7 +373,6 @@
 		/**
 		 * This method closes the lightbox, removes it, and unsets 
 		 * the 'lightbox_is_open' flag.
-		 * @return {[type]} [description]
 		 */
 		var close_lightbox = function() {
 			lightbox.fadeOut(150, function() {
