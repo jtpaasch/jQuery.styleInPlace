@@ -8,7 +8,7 @@ Simple use
 
 To make an element editable, simply select it with jQuery, then call the styleInPlace() plugin method.
 
-```js
+```javascript
 
 	$(#title).styleInPlace();
 
