@@ -816,7 +816,7 @@
 		 */
 		return this.each(function() {
 			
-			// Set 'self' to this particular element (wrapped in the jquery object).
+			// Set 'self' to this particular element (wrapped in the jQuery object).
 			self = $(this); 
 			
 			// Create the lightbox if it doesn't exist yet. 
