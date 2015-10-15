@@ -3,7 +3,7 @@ jQuery.styleInPlace
 
 A simple jQuery plugin that lets you change the basic CSS styles of an element in place. 
 
-To see it in action, look at the [the demo](http://jpaasch.github.com/jQuery.styleInPlace/), or try it on your local machine: download the zip or fork the project, then open index.html in a browser. 
+To see it in action, look at the [the demo](http://jtpaasch.github.com/jQuery.styleInPlace/), or try it on your local machine: download the zip or fork the project, then open index.html in a browser. 
 
 Basic usage
 ----------
